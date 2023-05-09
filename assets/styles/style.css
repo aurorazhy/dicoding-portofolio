@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap);
+article,
+body,
+header,
+nav > ul {
+   display: flex;
+}
+#meetme p,
+a,
+li {
+   font-weight: 600;
+}
+a,
+i,
+li {
+   transition: 0.4s ease-out;
+}
+footer,
+i:hover {
+   padding: 20px;
+   background-color: #e5e0ff;
+}
+.contact,
+.logo,
+footer {
+   text-align: center;
+}
+footer,
+header,
+i:hover {
+   background-color: #e5e0ff;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   flex-direction: column;
+   font-family: Poppins, sans-serif;
+}
+header {
+   justify-content: space-around;
+   align-items: center;
+   padding: 0.5em 1em;
+   position: sticky;
+   top: 0;
+}
+.logo > img {
+   width: 100px;
+}
+nav > ul {
+   justify-content: center;
+   gap: 2em;
+}
+a,
+li {
+   list-style-type: none;
+   text-decoration: none;
+   color: #000;
+   font-size: 20px;
+}
+.list > h1,
+h1 {
+   font-weight: 700;
+   color: #8ea7e9;
+}
+nav > ul > li:hover a {
+   background-color: #8ea7e9;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 50px;
+}
+article {
+   margin: 10em 7em 20em;
+   gap: 6em;
+   align-items: center;
+}
+.funlist,
+.list,
+aside {
+   gap: 1em;
+   display: flex;
+}
+aside {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 7em;
+}
+img {
+   width: 35%;
+   height: 50%;
+   transition: transform 0.2s;
+}
+img:hover {
+   transform: scale(1.1);
+}
+h1 {
+   font-size: 3vw;
+}
+article li {
+   margin-bottom: 5%;
+   font-size: 1.5vw;
+}
+.description {
+   align-items: center;
+}
+#meetme p {
+   font-size: 1.5vw;
+   text-align: justify;
+}
+.funlist,
+.list {
+   flex-direction: column;
+}
+.list > h1 {
+   font-size: 2vw;
+}
+.me > p,
+footer {
+   font-weight: 600;
+}
+#funfact {
+   display: flex;
+   gap: 10em;
+}
+.identitas {
+   display: flex;
+   justify-content: center;
+}
+.me {
+   margin-right: 2.5em;
+}
+.me > p {
+   font-size: 1vw;
+}
+.contact {
+   margin: 2em 0;
+}
+i {
+   font-size: 2.5vw;
+   margin: 1em;
+   color: #8ea7e9;
+}
+i:hover {
+   border-radius: 20px;
+   color: #7286d3;
+}
+footer {
+   margin-top: 2em;
+}
+@media only screen and (max-width: 600px) {
+   #funfact,
+   article {
+      gap: 2em;
+   }
+   .me > h1,
+   nav li {
+      margin-top: 10px;
+   }
+   header {
+      flex-direction: column;
+   }
+   nav li {
+      font-size: 20px;
+   }
+   #meetme p,
+   .me > p,
+   article li {
+      font-size: 1em;
+   }
+   article {
+      flex-direction: column;
+      margin: 5em 2em 10em;
+   }
+   h1 {
+      font-size: 2em;
+   }
+   img {
+      width: 60%;
+   }
+   article li {
+      margin-bottom: 2%;
+   }
+   #achievement {
+      flex-direction: column-reverse;
+   }
+   .list > h1,
+   .me > h1 {
+      font-size: 1.5em;
+   }
+   .identitas {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   aside {
+      margin: 0 3em;
+   }
+   i {
+      font-size: 1.8em;
+      margin: 1em;
+   }
+}
+@media only screen and (min-width: 600px) {
+   header {
+      flex-direction: column;
+   }
+   nav li {
+      margin-top: 10px;
+      font-size: 20px;
+   }
+   #meetme p,
+   .me > p,
+   article li {
+      font-size: 1em;
+   }
+   article {
+      gap: 2em;
+      flex-direction: column;
+   }
+   h1 {
+      font-size: 2em;
+   }
+   img {
+      width: 70%;
+   }
+   article li {
+      margin-bottom: 2%;
+   }
+   #achievement {
+      flex-direction: column-reverse;
+   }
+   .list > h1 {
+      font-size: 1.5em;
+   }
+   #funfact {
+      gap: 3em;
+   }
+   .identitas {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+}
+@media only screen and (min-width: 768px) {
+   #achievement,
+   .identitas,
+   article,
+   header {
+      flex-direction: row;
+   }
+   img {
+      width: 45%;
+   }
+   article li {
+      margin-bottom: 2%;
+      font-size: 1.8vw;
+   }
+   .list > h1 {
+      font-size: 2.5vw;
+   }
+   .me > p {
+      font-size: 1em;
+   }
+   i {
+      font-size: 2em;
+      margin: 0.5em;
+   }
+}
+@media only screen and (min-width: 992px) {
+   article {
+      gap: 4em;
+   }
+   img {
+      width: 40%;
+   }
+   .list > h1 {
+      font-size: 2.2vw;
+   }
+   #funfact {
+      gap: 5em;
+   }
+   .me > p {
+      font-size: 1.5vw;
+   }
+   i {
+      font-size: 2.2em;
+      margin: 1em;
+   }
+}
+@media only screen and (min-width: 1200px) {
+   #meetme p,
+   article li {
+      font-size: 1.5vw;
+   }
+   h1,
+   i {
+      font-size: 3vw;
+   }
+   img {
+      width: 35%;
+   }
+   article li {
+      margin-bottom: 5%;
+   }
+   .funlist,
+   .list {
+      gap: 1em;
+   }
+   .list > h1 {
+      font-size: 2vw;
+   }
+   #funfact {
+      gap: 8em;
+   }
+   .me > p {
+      font-size: 1.2vw;
+   }
+   i {
+      margin: 1em;
+   }
+}
